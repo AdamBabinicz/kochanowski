@@ -36,13 +36,13 @@
       font-family: "Poiret One", cursive;
 
       @media only screen and (max-width: 768px) {
-        font-size: 1.1rem;
+        font-size: 1.3rem;
       }
     }
 
     @media only screen and (max-width: 676px) {
       width: calc(10rem + 55vw);
-      font-size: 0.9rem;
+      font-size: 1.1rem;
     }
 
     &_header {
