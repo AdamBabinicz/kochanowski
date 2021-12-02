@@ -1,0 +1,136 @@
+#header {
+  position: relative;
+}
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.header h1 {
+  font-size: 7rem;
+  font-weight: 800;
+  line-height: 1;
+  background: -webkit-linear-gradient(#eee, rgb(153, 153, 153));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  /* color: var(--color-white); */
+  font-family: "Renaissance";
+  position: relative;
+  padding-right: 1rem;
+  padding-bottom: 2rem;
+  /* letter-spacing: 0.5rem; */
+}
+
+h1 span:nth-child(2),
+h1 span:nth-child(3) {
+  font-weight: 100;
+  font-size: 4rem;
+  letter-spacing: normal;
+}
+.header h1 span {
+  display: block;
+}
+.header h1 span::before {
+  content: "";
+}
+.header h1::after {
+  content: " ";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 65%;
+  height: 1px;
+  background: var(--light-text);
+}
+.header-cta {
+  display: flex;
+}
+.herb {
+  width: 6rem;
+}
+.header-left p {
+  margin: 3rem 0;
+  width: 80%;
+}
+.header-right img {
+  /* max-width: 100%; */
+  /* object-fit: contain; */
+}
+.floating-icon {
+  width: 5rem;
+  height: 5rem;
+  background: var(--light-blue);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+}
+.floating-icon a {
+  border: 1px solid var(--color-white);
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s ease-in-out;
+}
+.floating-icon a:hover {
+  background: var(--color-hover);
+}
+.mouse {
+  transform: translateY(-25%);
+  animation: bounce 0.8s ease infinite alternate;
+  color: #eee;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-25%);
+  }
+  100% {
+    transform: translateY(25%);
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .header h1 {
+    font-size: 3rem;
+  }
+  .header-left p {
+    text-align: left;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .header {
+    flex-direction: column;
+  }
+  .header-left,
+  .header-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .header-left {
+    margin-bottom: 4rem;
+  }
+  .header h1::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .header-right img {
+    width: 90%;
+  }
+}
