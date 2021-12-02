@@ -6,7 +6,7 @@ import Question from "./Question";
 
 const Faq = () => {
   return (
-    <section id="faq">
+    <section id="ciekawostki">
       <div className="container faq">
         <div className="u-title">
           <GiLockedChest />
