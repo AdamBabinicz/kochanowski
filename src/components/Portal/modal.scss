@@ -28,7 +28,7 @@
     transform: translateY(-600px);
     transition: all 0.4s ease;
     color: #000;
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     font-weight: 600;
 
     h2 {
@@ -36,13 +36,13 @@
       // font-family: "Poiret One", cursive;
 
       @media only screen and (max-width: 768px) {
-        font-size: 1.3rem;
+        font-size: 1.4rem;
       }
     }
 
     @media only screen and (max-width: 676px) {
       width: calc(10rem + 60vw);
-      font-size: 1.1rem;
+      font-size: 1.2rem;
     }
 
     &_header {
